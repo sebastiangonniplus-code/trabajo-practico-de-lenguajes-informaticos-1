@@ -1,0 +1,38 @@
+/* Variables CSS */
+:root {
+  --color-primario: #1A2B4A;
+  --color-acento: #028090;
+  --fuente: 'Inter', sans-serif;
+}
+
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fuente);
+  font-size: 16px;
+  color: #1A1A1A;
+  background-color: #F7F9FA;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+header {
+  background: var(--color-primario);
+  color: white;
+  padding: 1rem;
+}
+
+nav a {
+  color: var(--color-acento);
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
