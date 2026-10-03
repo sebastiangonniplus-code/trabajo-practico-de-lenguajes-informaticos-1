@@ -29,7 +29,7 @@
    ========================= */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Figtree', sans-serif;
     font-size: 16px;
     line-height: 1.6;
     background-color: var(--color-fondo);
@@ -254,4 +254,3 @@ footer address {
     nav a {
         text-align: center;
     }
-}
