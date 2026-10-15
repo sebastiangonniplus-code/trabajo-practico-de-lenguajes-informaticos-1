@@ -3,10 +3,10 @@
    ========================= */
 
 :root {
-    --color-fondo: #071E2D;
-    --color-principal: #0B3D5C;
-    --color-acento: #21C7B7;
-    --color-luminoso: #67F7E5;
+    --color-fondo: #010736;
+    --color-principal: #0D1C42;
+    --color-acento: #22396F;
+    --color-luminoso: white;
     --color-coral: #FF7F6A;
     --color-texto: #D9F7F3;
     --color-blanco: #FFFFFF;
@@ -30,14 +30,14 @@
 
 body {
     font-family: 'Figtree', sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 17px;              
+    line-height: 1.8;             
     background-color: var(--color-fondo);
     color: var(--color-texto);
 
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 20px 40px;         
 }
 
 
@@ -47,8 +47,8 @@ body {
 
 header {
     background-color: var(--color-principal);
-    padding: 30px;
-    margin-bottom: 30px;
+    padding: 50px 30px;          
+    margin-bottom: 50px;         
     text-align: center;
     border-bottom: 3px solid var(--color-acento);
 }
@@ -56,7 +56,7 @@ header {
 header h1 {
     color: var(--color-luminoso);
     font-size: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 35px;
 }
 
 header h2 {
@@ -74,21 +74,27 @@ header p {
    MENÚ DE NAVEGACIÓN
    ========================= */
 
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
 }
 
 nav a {
     color: var(--color-blanco);
     text-decoration: none;
     background-color: var(--color-acento);
-    padding: 8px 12px;
+    padding: 15px 22px;           
     border-radius: 5px;
-    display: block;
 }
 
 nav a:hover {
@@ -103,7 +109,7 @@ nav a:hover {
 
 main {
     background-color: var(--color-principal);
-    padding: 30px;
+    padding: 50px;                
     border-radius: 8px;
 }
 
@@ -119,17 +125,55 @@ main > h2 {
    ========================= */
 
 section {
-    margin-bottom: 35px;
+    margin-bottom: 60px;          
+}
+
+section h2 {                      
+    color: var(--color-luminoso);
+    font-size: 30px;
+    margin-bottom: 25px;
 }
 
 section h3 {
-    color: var(--color-acento);
+    color: var(--color-blanco);
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 section p {
-    margin-bottom: 15px;
+    margin-bottom: 20px;          
+}
+
+
+/* =========================
+   CLASE E ID (
+   ========================= */
+
+/* Clase: introducción centrada y angosta, más cómoda de leer */
+.intro {
+    max-width: 700px;
+    margin: 0 auto 70px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+/* Id: título de la sección de lugares con detalle decorativo */
+#lugares-principales > h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--color-acento);
+}
+
+/* Clase: cada tarjeta de lugar */
+.lugar {
+    padding: 35px;
+    margin: 40px 0;
+}
+
+.lugar:hover {
+    border-left-color: var(--color-coral);
 }
 
 
@@ -139,8 +183,8 @@ section p {
 
 article {
     background-color: var(--color-fondo);
-    padding: 20px;
-    margin: 20px 0;
+    padding: 30px;                
+    margin: 30px 0;               
     border-left: 4px solid var(--color-acento);
     border-radius: 5px;
 }
@@ -160,7 +204,7 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 20px auto;
+    margin: 30px auto;            
     border-radius: 8px;
 }
 
@@ -185,13 +229,13 @@ footer a:hover {
    ========================= */
 
 dl {
-    margin: 20px 0;
+    margin: 25px 0;
 }
 
 dt {
     color: var(--color-luminoso);
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 dd {
@@ -205,8 +249,8 @@ dd {
 
 footer {
     background-color: var(--color-principal);
-    margin-top: 30px;
-    padding: 25px;
+    margin-top: 50px;             
+    padding: 35px 25px;           
     text-align: center;
     border-top: 3px solid var(--color-acento);
 }
@@ -228,11 +272,11 @@ footer address {
 @media (max-width: 600px) {
 
     body {
-        padding: 0 10px;
+        padding: 0 10px 30px;
     }
 
     header {
-        padding: 20px 10px;
+        padding: 30px 10px;
     }
 
     header h1 {
@@ -244,9 +288,10 @@ footer address {
     }
 
     main {
-        padding: 20px 15px;
+        padding: 30px 20px;
     }
 
+    nav,
     nav ul {
         flex-direction: column;
     }
@@ -254,3 +299,9 @@ footer address {
     nav a {
         text-align: center;
     }
+
+    .lugar {
+        padding: 25px 20px;
+    }
+
+}   
