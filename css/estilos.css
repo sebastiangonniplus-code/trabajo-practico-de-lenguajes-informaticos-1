@@ -70,38 +70,6 @@ header p {
 }
 
 
-/* =========================
-   MENÚ DE NAVEGACIÓN
-   ========================= */
-
-nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-nav a {
-    color: var(--color-blanco);
-    text-decoration: none;
-    background-color: var(--color-acento);
-    padding: 15px 22px;           
-    border-radius: 5px;
-}
-
-nav a:hover {
-    background-color: var(--color-luminoso);
-    color: var(--color-fondo);
-}
-
 
 /* =========================
    CONTENIDO PRINCIPAL
@@ -291,17 +259,43 @@ footer address {
         padding: 30px 20px;
     }
 
-    nav,
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav a {
-        text-align: center;
-    }
+    
 
     .lugar {
         padding: 25px 20px;
     }
 
 }   
+/* =========================
+   BOOTSTRAP - PERSONALIZACIONES
+   ========================= */
+
+/* Personalizamos el fondo de la barra de navegación de Bootstrap con tu color principal */
+.bg-custom-navbar {
+    background-color: var(--color-principal) !important;
+    border-bottom: 3px solid var(--color-acento);
+}
+
+/* Estilo para los links de la navbar de Bootstrap combinados con tu paleta */
+.navbar-nav .nav-link {
+    color: var(--color-blanco) !important;
+    background-color: var(--color-acento);
+    padding: 10px 18px;
+    border-radius: 5px;
+    margin: 2px 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto hover idéntico al que tenías antes */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    background-color: var(--color-luminoso) !important;
+    color: var(--color-fondo) !important;
+}
+
+/* Ajuste para el brand (nombre/logo) */
+.navbar-brand {
+    color: var(--color-luminoso) !important;
+    font-weight: bold;
+    font-size: 22px;
+}
