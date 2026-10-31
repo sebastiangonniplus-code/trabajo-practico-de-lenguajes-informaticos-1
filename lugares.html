@@ -2,25 +2,57 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+    <!-- 1. BOOTSTRAP CSS (¡Siempre antes del CSS propio!) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CSS propio del sitio -->
     <link rel="stylesheet" href="css/estilos.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Lugares de interés - Puerto Abisal</title>
 </head>
 
 <body>
 
+    <!-- 2. HEADER CON NAVBAR DE BOOTSTRAP -->
     <header>
         <h1>Lugares de interés</h1>
 
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="ciudad.html">La ciudad</a>
-            <a href="lugares.html">Lugares</a>
-            <a href="actividades.html">Actividades</a>
-            <a href="contacto.html">Contacto</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-custom-navbar">
+            <div class="container-fluid">
+                <!-- Logo o marca -->
+                <a class="navbar-brand" href="index.html">Puerto Abisal</a>
+                
+                <!-- Botón hamburguesa para celulares -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Links del menú -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ciudad.html">La ciudad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="lugares.html">Lugares</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="actividades.html">Actividades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -34,8 +66,6 @@
             turísticos donde los visitantes pueden conocer la historia,
             la naturaleza y la cultura de la ciudad.
         </p>
-
-        <br>
     </section>
 
 
@@ -46,7 +76,7 @@
 
         <article class="lugar">
             <h3>Faro de las Profundidades</h3>
-            <img src= "Imagenes/FaroPuertoAbisal.jpg" alt= "Imagen del faro de las profundidades.">
+            <img src="Imagenes/FaroPuertoAbisal.jpg" alt="Imagen del faro de las profundidades.">
             <p>
                 El Faro de las Profundidades es uno de los símbolos
                 más importantes de Puerto Abisal. Fue construido
@@ -73,7 +103,7 @@
 
         <article class="lugar">
             <h3>Acuario Abisal</h3>
-            <img src= "Imagenes/AcuarioBisal.jpg" alt= "Imagen del Acuario Abisal">
+            <img src="Imagenes/AcuarioBisal.jpg" alt="Imagen del Acuario Abisal">
             <p>
                 El Acuario Abisal es uno de los principales centros
                 turísticos y educativos de la ciudad. Cuenta con
@@ -102,7 +132,7 @@
 
         <article class="lugar">
             <h3>Distrito Coral</h3>
-            <img src= "Imagenes/Distritocoral.jpg" alt= "Imagen del distrito coral">
+            <img src="Imagenes/Distritocoral.jpg" alt="Imagen del distrito coral">
             <p>
                 El Distrito Coral es una de las zonas más llamativas
                 de Puerto Abisal. Sus edificios y espacios públicos
@@ -136,6 +166,9 @@
     <footer>
         <p>&copy; 2026 Puerto Abisal. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- 3. BOOTSTRAP JS (¡Antes del cierre del body!) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
