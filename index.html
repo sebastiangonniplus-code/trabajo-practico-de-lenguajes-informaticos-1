@@ -18,16 +18,36 @@
      <h1>Ciudad Abisal </h1>
      <h2>¡Bienvenidos al portal de esta hermosa ciudad portuaria!</h2>
      <p>En esta página, podrás encontrar todo lo que necesitas saber antes de hacer tu visita.</p>
-     <!--Enlaces hacia las demás páginas-->
-     <nav>
-         <ul>
-            <!--"<li><a href="index.html">Inicio</a></li>" Las demas páginas deberian tener un enlace como el anterior-->
-            <li id="ciu"><a href="ciudad.html">Nosotros y nuestra Historia</a></li>
-            <li id="lug"><a href="lugares.html">Los lugares que nos definen</a></li>
-            <li id="actv"><a href="actividades.html">¿Qué hacer en puerto Abisal?</a></li>
-            <li id="cont"><a href="contacto.html">Contáctese con nosotros</a></li>
-         </ul>
-     </nav>
+     <!-- Navbar de Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom-navbar">
+        <div class="container-fluid">
+            <!-- Logo o Nombre de la marca -->
+            <a class="navbar-brand" href="index.html">Mi Ciudad</a>
+            
+            <!-- Botón hamburguesa para celulares -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Links del menú -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ciudad.html">La Ciudad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lugares.html">Lugares</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
   </header>
 
   <main>
