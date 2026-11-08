@@ -347,3 +347,13 @@ footer address {
     font-weight: bold;
     font-size: 22px;
 }
+/* ========================================== */
+/* PERSONALIZACIÓN GLOBAL DE LA PÁGINA        */
+/* ========================================== */
+
+/* Sobrescribir estilos globales con variables */
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: 'Figtree', sans-serif;
+}
