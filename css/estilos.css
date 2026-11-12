@@ -266,11 +266,59 @@ footer address {
     }
 
 }   
+
+/* =========================
+   FLEXBOX
+   ========================= */
+
+.actividades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+/* Título y párrafos ocupan toda la fila */
+.actividades > h3,
+.actividades > p {
+    flex: 0 0 100%;
+    margin-bottom: 0;   /* el espacio lo da el gap */
+}
+
+/* Las tarjetas se reparten el ancho */
+.actividades > article {
+    flex: 1 1 280px;
+    margin: 0;          /* pisa el margin: 30px 0 de "article" */
+}
+
+/* =========================
+   POSICIONAMIENTO
+   ========================= */
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    margin: 0;
+    width: 100%;
+}
+
+.hero-texto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 20px;
+    background: rgba(1, 7, 54, 0.75);
+    color: var(--color-blanco);
+    border-radius: 0 0 8px 8px;
+}
+
 /* =========================
    BOOTSTRAP - PERSONALIZACIONES
    ========================= */
 
-/* Personalizamos el fondo de la barra de navegación de Bootstrap con tu color principal */
+/* Personalizamos el fondo de la barra de navegación de Bootstrap con un color principal */
 .bg-custom-navbar {
     background-color: var(--color-principal) !important;
     border-bottom: 3px solid var(--color-acento);
@@ -298,4 +346,14 @@ footer address {
     color: var(--color-luminoso) !important;
     font-weight: bold;
     font-size: 22px;
+}
+/* ========================================== */
+/* PERSONALIZACIÓN GLOBAL DE LA PÁGINA        */
+/* ========================================== */
+
+/* Sobrescribir estilos globales con variables */
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: 'Figtree', sans-serif;
 }
