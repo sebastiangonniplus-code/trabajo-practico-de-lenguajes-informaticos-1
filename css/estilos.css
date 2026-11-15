@@ -357,3 +357,16 @@ body {
     color: var(--color-texto);
     font-family: 'Figtree', sans-serif;
 }
+
+
+/* MODO CLARO  */
+
+white-mode {
+    --color-fondo: #F4F6FA;
+    --color-principal: #FFFFFF;
+    --color-acento: #D9E2F2;
+    --color-luminoso: #0D1C42;
+    --color-coral: #E85D4A;
+    --color-texto: #263653;
+    --color-blanco: #0D1C42;
+}
