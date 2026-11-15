@@ -361,7 +361,7 @@ body {
 
 /* MODO CLARO  */
 
-white-mode {
+body.white-mode {
     --color-fondo: #F4F6FA;
     --color-principal: #FFFFFF;
     --color-acento: #D9E2F2;
