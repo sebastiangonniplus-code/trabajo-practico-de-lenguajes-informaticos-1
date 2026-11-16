@@ -51,14 +51,20 @@
         <p>Dirección: Av. Costanera Abisal 1234</p>
         <p>Teléfono: 1123456789</p>
         <p>Email: turismo@puertoabisal.gob.ar</p>
-        <form action="">
-            <p>Nombre: <input type="text"></p>
-            <p>Apellido: <input type="text"></p>
-            <p>Correo Electrónico: <input type="email"></p>
-            <p>Teléfono: <input type="tel"></p>
-            <p>Consulta: <input type="text"></p>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
+  <form id="formContacto" action="" novalidate>
+  <p>Nombre: <input type="text" id="nombre">
+    <span class="error" id="errorNombre"></span></p>
+  <p>Apellido: <input type="text" id="apellido">
+    <span class="error" id="errorApellido"></span></p>
+  <p>Correo Electrónico: <input type="email" id="email">
+    <span class="error" id="errorEmail"></span></p>
+  <p>Teléfono: <input type="tel" id="telefono">
+    <span class="error" id="errorTelefono"></span></p>
+  <p>Consulta: <textarea id="consulta" rows="4"></textarea>
+    <span class="error" id="errorConsulta"></span></p>
+  <button type="submit" class="btn btn-primary">Enviar</button>
+  <p id="exito" class="exito"></p>
+</form>
     </main>
     <footer>
         <p>&copy; 2024 Puerto Abisal</p>
