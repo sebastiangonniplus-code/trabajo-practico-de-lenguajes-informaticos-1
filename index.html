@@ -1,136 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/estilos.css">
-  <title>Inicio - Puerto Abisal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Inicio - Puerto Abisal</title>
 </head>
 
 <body>
 
-  <header>
-     <h1>Ciudad Abisal </h1>
-     <h2>¡Bienvenidos al portal de esta hermosa ciudad portuaria!</h2>
-     <p>En esta página, podrás encontrar todo lo que necesitas saber antes de hacer tu visita.</p>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-custom-navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Inicio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="ciudad.html">La Ciudad</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="lugares.html">Lugares</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="actividades.html">Actividades</a>
-                    </li>
-                     <li class="nav-item">
+    <header>
+        <h1>Ciudad Abisal</h1>
+        <h2>¡Bienvenidos al portal de esta hermosa ciudad portuaria!</h2>
+        <p>En esta página, podrás encontrar todo lo que necesitas saber antes de hacer tu visita.</p>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-custom-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ciudad.html">La Ciudad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="lugares.html">Lugares</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="actividades.html">Actividades</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link btn btn-outline-primary px-3" id="boton-modo-oscuro">Modo Claro</a>
                         </li>
-                </ul>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-  </header>
+        </nav>
+    </header>
 
-  <main>
-     <h2>Todo sobre Puerto Abisal</h2>
+    <main class="container my-5">
+        
+        <!-- SECCIÓN HERO DE BIENVENIDA -->
+        <section class="p-5 mb-5 rounded text-center tarjeta-abisal">
+            <h2 class="display-5 fw-bold mb-3">Bienvenidos a Puerto Abisal</h2>
+            <p class="lead mb-4">
+                Un punto de encuentro único entre la tecnología, la historia y la magia del océano. Descubrí todo lo que nuestra ciudad costera tiene para ofrecerte.
+            </p>
+            <a href="ciudad.html" class="btn btn-outline-light btn-lg px-4">Conocé nuestra historia</a>
+        </section>
 
-     <section class="Actividades">
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-          <div class="col">
-            <div class="card" style="background-color: var(--color-principal); color: var(--color-texto);">
-              <img src="Imagenes/FaroPuertoAbisal.jpg" class="card-img-top" alt="Foto del puerto Abisal">
-              <div class="card-body">
-                <h5 class="card-title" style="color: var(--color-luminoso);">Identidad y caracteristicas</h5>
-                <p class="card-text">Fundada en 1874 por un grupo de exploradores, Puerto Abisal es una ciudad costera construida alrededor de una bahía que ofrece a sus residentes y visitantes una experiencia diferente.<br>En esta ciudad, que combina avances tecnológicos con la naturaleza, el mar y su ecosistema son muy importantes y cada <em>Abisaleño y Abisaleña</em> lo sabe.</p>
-              </div>
+        <!-- ACCESOS DIRECTOS A LAS DEMÁS SECCIONES -->
+        <section class="row g-4 text-center">
+            <h3 class="mb-3">Explorá el portal</h3>
+            
+            <!-- Tarjeta 1: La Ciudad -->
+            <div class="col-md-4">
+                <div class="card h-100 tarjeta-abisal border-0">
+                    <img src="Imagenes/FaroPuertoAbisal.jpg" class="card-img-top rounded-top" alt="Faro de Puerto Abisal">
+                    <div class="card-body p-4 d-flex flex-column">
+                        <h4 class="h5 mb-3">La Ciudad</h4>
+                        <p class="card-text">Conocé la identidad, el origen y cómo conviven la modernidad y la naturaleza en Puerto Abisal.</p>
+                        <a href="ciudad.html" class="btn btn-outline-light btn-sm mt-auto mx-auto">Ir a La Ciudad</a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
 
-      <p class="mt-4">Para mas información, vea:</p>
-      <button type="button" class="btn btn-lg" style="background-color: var(--color-fondo); color: var(--color-blanco);">
-        <a href="ciudad.html" class="text-decoration-none" style="color: var(--color-blanco);">Nosotros y nuestra Historia.</a>
-      </button>
-     </section>
-
-     <section class="mt-5">
-        <h3>Eventos y actividades</h3>
-        <p>A continuación, podrás tomar referencia de las actividades brindadas por la ciudad y cuales son <strong>próximas a vos</strong>.</p>
-
-        <article class="card mb-4" style="background-color: var(--color-acento); color: var(--color-texto);">
-          <div class="card-body">
-             <h5 class="card-title" style="color: var(--color-luminoso);">Arrecifes luminosos</h5>
-             <p class="card-text">Un ecosistema submarino excepcional donde corales, algas y microorganismos generan luz propia mediante bioluminiscencia.</p>
-             <p class="card-text"><small style="color: var(--color-texto);">Arrecife luminoso de puerto Abisal.</small></p>
-         </div>
-             <img src="Imagenes/ArrecifeLuminoso.jpg" class="card-img-bottom" alt="Arrecife luminoso de puerto Abisal.">
-        </article>
-
-        <article class="card mb-4" style="background-color: var(--color-acento); color: var(--color-texto);">
-            <div class="card-body">
-            <h5 class="card-title" style="color: var(--color-luminoso);">Centro Histórico</h5>
-            <p class="card-text">El Centro Histórico es el <strong>Núcleo fundacional</strong> de la ciudad. Construido cerca de la bahía, su arquitectura es la original desde su fundación.</p>
-            <p class="card-text"><small style="color: var(--color-texto);">Centro Histórico de la ciudad.</small></p>
+            <!-- Tarjeta 2: Lugares de Interés -->
+            <div class="col-md-4">
+                <div class="card h-100 tarjeta-abisal border-0">
+                    <img src="Imagenes/AcuarioBisal.jpg" class="card-img-top rounded-top" alt="Acuario Abisal">
+                    <div class="card-body p-4 d-flex flex-column">
+                        <h4 class="h5 mb-3">Lugares de Interés</h4>
+                        <p class="card-text">Explorá el Faro, el Acuario y el Distrito Coral en nuestra guía detallada de turismo.</p>
+                        <a href="lugares.html" class="btn btn-outline-light btn-sm mt-auto mx-auto">Ver Lugares</a>
+                    </div>
+                </div>
             </div>
-                <img src="Imagenes/CentroHistorico.jpg" class="card-img-bottom" alt="Centro Histórico de la ciudad.">
-        </article>
 
-        <p>Para mas información, vea:</p>
-        <button type="button" class="btn btn-lg mb-4" style="background-color: var(--color-fondo); color: var(--color-blanco);">
-          <a href="lugares.html" class="text-decoration-none" style="color: var(--color-blanco);">Los lugares que nos definen</a>
-        </button>
+            <!-- Tarjeta 3: Actividades -->
+            <div class="col-md-4">
+                <div class="card h-100 tarjeta-abisal border-0">
+                    <img src="Imagenes/Distritocoral.jpg" class="card-img-top rounded-top" alt="Distrito Coral">
+                    <div class="card-body p-4 d-flex flex-column">
+                        <h4 class="h5 mb-3">Actividades</h4>
+                        <p class="card-text">Enterate de los próximos eventos, los arrecifes luminosos y las actividades para toda la familia.</p>
+                        <a href="actividades.html" class="btn btn-outline-light btn-sm mt-auto mx-auto">Ver Actividades</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <article class="card p-4 mb-4" style="background-color: var(--color-acento); color: var(--color-texto);">
-            <h4 style="color: var(--color-luminoso);">Próximas Actividades</h4>
-            <p>A continuación podrá ver las fechas importantes mas próximas:</p>
-            <dl>
-                <dt>15/9/26</dt>
-                <dd>Inscripción al curso "Buseo para todos".</dd>
+    </main>
 
-                <dt>21/9/26</dt>
-                <dd>¡Día de la primavera en el Centro</dd>
+    <footer>
+        <h3>Contactáctese con nosotros</h3>
+        <address>
+            Puerto Abisal, Costa Este.
+            <a href="mailto:info@puertoabisal.com">info@puertoabisal.com</a>
+        </address>
+        <p>© 2026 Puerto Abisal. Todos los derechos reservados.</p>
+        <a href="#top">Volver al inicio de página</a>
+    </footer>
 
-                <dt>25/9/26</dt>
-                <dd>Exposición "Ayudemos al medioambiente"</dd>
-            </dl>
-           <p>Para mas información, vea:</p>
-           <button type="button" class="btn btn-lg" style="background-color: var(--color-fondo); color: var(--color-blanco);">
-             <a href="actividades.html" class="text-decoration-none" style="color: var(--color-blanco);">¿Qué hacer en puerto Abisal?</a>
-           </button>
-        </article>
-     </section>
-   </main>
-
-  <footer>
-    <h3>Contactáctese con nosoros</h3>
-    <address>
-     Puerto Abisal, Costa Este.
-     <a href="mailto:info@puertoabisal.com">info@puertoabisal.com</a>
-    </address>
-    <p>© 2026 Puerto Abisal. Todos los derechos reservados.</p>
-    <a href="#top">Volver al inicio de página</a>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
