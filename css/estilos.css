@@ -370,3 +370,6 @@ body.white-mode {
     --color-texto: #263653;
     --color-blanco: #0D1C42;
 }
+/*FORMULARIO DE CONTACTO*/
+.error{color:#d62828;font-size:0.85rem;display:block;}
+.exito{color:#2a9d4a;font-weight:bold;margin-top:10px;display:block;}
