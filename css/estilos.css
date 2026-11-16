@@ -24,6 +24,37 @@
 }
 
 
+/* Clases de Seba */
+
+.tarjeta-abisal{
+    background-color: var(--color-fondo);  
+    color: var(--color-texto)  
+}
+
+.list-group-item{
+    background-color: var(--color-fondo);
+    color:var(--color-texto)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* =========================
    CUERPO DE LA PÁGINA
    ========================= */
@@ -163,18 +194,6 @@ article h4 {
     margin-bottom: 8px;
 }
 
-
-/* =========================
-   IMÁGENES
-   ========================= */
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 30px auto;            
-    border-radius: 8px;
-}
 
 
 /* =========================
