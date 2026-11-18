@@ -1,3 +1,31 @@
+
+const boton = document.getElementById("boton-modo-claro");
+
+// Al abrir la página
+if (localStorage.getItem("modo") === "claro") {
+    document.body.classList.add("white-mode");
+    boton.textContent = "🌙 Modo oscuro";
+} else {
+    boton.textContent = "🌞 Modo claro";
+}
+
+// Al hacer click
+boton.addEventListener("click", () => {
+
+    document.body.classList.toggle("white-mode");
+
+    if (document.body.classList.contains("white-mode")) {
+        localStorage.setItem("modo", "claro");
+        boton.textContent = "🌙 Modo oscuro";
+    } else {
+        localStorage.setItem("modo", "oscuro");
+        boton.textContent = "🌞 Modo claro";
+    }
+
+});
+
+/* Primer Acercamiento modo oscuro /*
+/*
 const modo_oscuro = document.getElementById('boton-modo-oscuro');
 
 if (modo_oscuro) {
@@ -5,6 +33,8 @@ if (modo_oscuro) {
     document.body.classList.toggle('white-mode')
 });
 }
+*/
+
 
 // ===== VALIDACIÓN DEL FORMULARIO DE CONTACTO =====
 const form = document.getElementById("formContacto");
