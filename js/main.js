@@ -24,18 +24,6 @@ boton.addEventListener("click", () => {
 
 });
 
-/* Primer Acercamiento modo oscuro /*
-/*
-const modo_oscuro = document.getElementById('boton-modo-oscuro');
-
-if (modo_oscuro) {
- modo_oscuro.addEventListener('click',()=>{
-    document.body.classList.toggle('white-mode')
-});
-}
-*/
-
-
 // ===== VALIDACIÓN DEL FORMULARIO DE CONTACTO =====
 const form = document.getElementById("formContacto");
 
