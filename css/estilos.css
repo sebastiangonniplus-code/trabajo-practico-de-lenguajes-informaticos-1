@@ -12,6 +12,16 @@
     --color-blanco: #FFFFFF;
 }
 
+/*Reset Básico*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
 /* Modo claro: se activa con la clase white-mode en el body */
 body.white-mode {
     --color-fondo: #F4F6FA;
