@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -16,15 +17,12 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-custom-navbar">
             <div class="container-fluid">
-                <!-- Logo o Nombre de la marca -->
                 <a class="navbar-brand">Puerto Abisal</a>
 
-                <!-- Botón hamburguesa para celulares -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!-- Links del menú -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
@@ -42,7 +40,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="actividades.html">Actividades</a>
                         </li>
-                         <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link btn btn-outline-primary px-3" id="boton-modo-claro">Modo Claro</a>
                         </li>
                     </ul>
@@ -50,67 +48,82 @@
             </div>
         </nav>
     </header>
+
     <main class="container my-5">
-  <h2 class="mb-4 text-center">¿Querés ponerte en contacto?</h2>
-  <div class="row g-4">
+        <h2 class="mb-4 text-center">¿Querés ponerte en contacto?</h2>
 
-    <!-- Datos de contacto -->
-    <div class="col-lg-5">
-      <div class="card h-100 tarjeta-abisal border-0 p-4">
-        <h3 class="h5 mb-4">Datos de contacto</h3>
-        <p class="mb-3">📍 <strong>Dirección:</strong><br>Av. Costanera Abisal 1234</p>
-        <p class="mb-3">📞 <strong>Teléfono:</strong><br>1123456789</p>
-        <p class="mb-0">✉️ <strong>Email:</strong><br>
-          <a href="mailto:info@puertoabisal.com">info@puertoabisal.com</a>
-        </p>
-      </div>
-    </div>
+        <div class="row g-4">
+            <div class="col-lg-5">
+                <div class="card h-100 tarjeta-abisal border-0 p-4">
+                    <h3 class="h5 mb-4">Datos de contacto</h3>
 
-    <!-- Formulario -->
-    <div class="col-lg-7">
-      <div class="card h-100 tarjeta-abisal border-0 p-4">
-        <h3 class="h5 mb-4">Envianos tu consulta</h3>
-        <form id="formContacto" action="" novalidate>
-          <div class="row g-3">
-            <div class="col-md-6">
-              <label for="nombre" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="nombre">
-              <span class="error" id="errorNombre"></span>
-            </div>
-            <div class="col-md-6">
-              <label for="apellido" class="form-label">Apellido</label>
-              <input type="text" class="form-control" id="apellido">
-              <span class="error" id="errorApellido"></span>
-            </div>
-            <div class="col-md-6">
-              <label for="email" class="form-label">Correo electrónico</label>
-              <input type="email" class="form-control" id="email">
-              <span class="error" id="errorEmail"></span>
-            </div>
-            <div class="col-md-6">
-              <label for="telefono" class="form-label">Teléfono</label>
-              <input type="tel" class="form-control" id="telefono">
-              <span class="error" id="errorTelefono"></span>
-            </div>
-            <div class="col-12">
-              <label for="consulta" class="form-label">Consulta</label>
-              <textarea class="form-control" id="consulta" rows="4"></textarea>
-              <span class="error" id="errorConsulta"></span>
-            </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary px-4">Enviar</button>
-              <p id="exito" class="exito mt-3 mb-0"></p>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
+                    <p class="mb-3">📍 <strong>Dirección:</strong><br>Av. Costanera Abisal 1234</p>
 
-  </div>
-</main>
+                    <p class="mb-3">📞 <strong>Teléfono:</strong><br><a href="tel:1123456789">11 2345-6789</a></p>
+
+                    <p class="mb-3">✉️ <strong>Email:</strong><br>
+                        <a href="mailto:info@puertoabisal.com">info@puertoabisal.com</a>
+                    </p>
+
+                    <p class="mb-3">📷 <strong>Instagram:</strong><br>
+                        <a href="https://www.instagram.com/puertoabisal/" target="_blank" rel="noopener noreferrer">@puertoabisal</a>
+                    </p>
+
+                    <p class="mb-0"><em>¡Estamos para ayudarte a descubrir Puerto Abisal!</em></p>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="card h-100 tarjeta-abisal border-0 p-4">
+                    <h3 class="h5 mb-4">Envianos tu consulta</h3>
+
+                    <form id="formContacto" action="" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre">
+                                <span class="error" id="errorNombre"></span>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="apellido" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id="apellido">
+                                <span class="error" id="errorApellido"></span>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email">
+                                <span class="error" id="errorEmail"></span>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="telefono">
+                                <span class="error" id="errorTelefono"></span>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="consulta" class="form-label">Consulta</label>
+                                <textarea class="form-control" id="consulta" rows="4"></textarea>
+                                <span class="error" id="errorConsulta"></span>
+                            </div>
+
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary px-4">Enviar</button>
+                                <p id="exito" class="exito mt-3 mb-0"></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
     <footer>
         <p>© 2026 Puerto Abisal. Todos los derechos reservados.</p>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
