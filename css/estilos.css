@@ -11,6 +11,8 @@
     --color-coral: #FF7F6A;
     --color-texto: #D9F7F3;
     --color-blanco: #FFFFFF;
+    --color-error: #FF7777;
+    --color-exito: #2a9d4a;
 }
 
 /* Reset Básico */
@@ -31,6 +33,9 @@ body.white-mode {
     --color-coral: #E85D4A;
     --color-texto: #263653;
     --color-blanco: #0D1C42;
+    --color-coral: #B83B2D;
+    --color-error: #B3261E;
+    --color-exito: #187A35;
 }
 
 /* =========================
@@ -75,13 +80,13 @@ body.white-mode {
 /* Formulario de contacto */
 
 .error {
-    color: #d62828;
+    color: var(--color-error);
     font-size: 0.85rem;
     display: block;
 }
 
 .exito {
-    color: #2a9d4a;
+    color: var(--color-exito);
     font-weight: bold;
     display: block;
 }
