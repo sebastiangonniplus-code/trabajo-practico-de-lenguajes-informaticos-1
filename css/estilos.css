@@ -1,3 +1,4 @@
+
 /* =========================
    VARIABLES DE COLORES
    ========================= */
@@ -12,17 +13,16 @@
     --color-blanco: #FFFFFF;
 }
 
-/*Reset Básico*/
+/* Reset Básico */
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Modo claro */
 
-
-/* Modo claro: se activa con la clase white-mode en el body */
 body.white-mode {
     --color-fondo: #F4F6FA;
     --color-principal: #FFFFFF;
@@ -32,7 +32,6 @@ body.white-mode {
     --color-texto: #263653;
     --color-blanco: #0D1C42;
 }
-
 
 /* =========================
    CLASES PROPIAS
@@ -48,7 +47,8 @@ body.white-mode {
     color: var(--color-texto);
 }
 
-/* Introducción centrada y angosta (lugares.html) */
+/* Introducción centrada y angosta */
+
 .intro {
     max-width: 700px;
     margin: 0 auto 70px;
@@ -57,7 +57,8 @@ body.white-mode {
     line-height: 1.9;
 }
 
-/* Título de la sección de lugares con detalle decorativo */
+/* Título de la sección de lugares */
+
 #lugares-principales > h2 {
     text-align: center;
     margin-bottom: 40px;
@@ -65,12 +66,14 @@ body.white-mode {
     border-bottom: 2px solid var(--color-acento);
 }
 
-/* Separación entre las cards de lugares */
+/* Separación entre las cards */
+
 #lugares-principales article {
     margin: 30px 0;
 }
 
 /* Formulario de contacto */
+
 .error {
     color: #d62828;
     font-size: 0.85rem;
@@ -83,12 +86,10 @@ body.white-mode {
     display: block;
 }
 
-
 /* =========================
    CUERPO DE LA PÁGINA
    ========================= */
 
-/* Ojo: el body ya limita el ancho; el "container" del <main> es redundante */
 body {
     font-family: 'Figtree', sans-serif;
     font-size: 17px;
@@ -100,6 +101,27 @@ body {
     padding: 0 20px 40px;
 }
 
+/* =========================
+   JERARQUÍA DE ENCABEZADOS
+   ========================= */
+
+h1 {
+    color: var(--color-luminoso);
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: var(--color-coral);
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    color: var(--color-blanco);
+    font-size: 24px;
+    margin-bottom: 15px;
+}
 
 /* =========================
    ENCABEZADO
@@ -114,13 +136,10 @@ header {
 }
 
 header h1 {
-    color: var(--color-luminoso);
-    font-size: 40px;
     margin-bottom: 35px;
 }
 
 header h2 {
-    color: var(--color-blanco);
     font-size: 22px;
     margin-bottom: 10px;
 }
@@ -128,7 +147,6 @@ header h2 {
 header p {
     margin-bottom: 20px;
 }
-
 
 /* =========================
    CONTENIDO PRINCIPAL
@@ -141,11 +159,8 @@ main {
 }
 
 main > h2 {
-    color: var(--color-luminoso);
-    font-size: 30px;
     margin-bottom: 25px;
 }
-
 
 /* =========================
    SECCIONES
@@ -156,14 +171,10 @@ section {
 }
 
 section h2 {
-    color: var(--color-luminoso);
-    font-size: 30px;
     margin-bottom: 25px;
 }
 
 section h3 {
-    color: var(--color-blanco);
-    font-size: 24px;
     margin-bottom: 15px;
 }
 
@@ -176,7 +187,6 @@ article h4 {
     font-size: 20px;
     margin-bottom: 8px;
 }
-
 
 /* =========================
    ENLACES
@@ -191,7 +201,6 @@ main a:hover,
 footer a:hover {
     color: var(--color-coral);
 }
-
 
 /* =========================
    LISTA DE DEFINICIONES
@@ -211,7 +220,6 @@ dd {
     margin-left: 20px;
 }
 
-
 /* =========================
    PIE DE PÁGINA
    ========================= */
@@ -225,14 +233,12 @@ footer {
 }
 
 footer h3 {
-    color: var(--color-luminoso);
     margin-bottom: 10px;
 }
 
 footer address {
     margin-bottom: 10px;
 }
-
 
 /* =========================
    BOOTSTRAP: NAVBAR
@@ -264,7 +270,6 @@ footer address {
     font-size: 22px;
 }
 
-
 /* =========================
    ADAPTACIÓN PARA CELULARES
    ========================= */
@@ -275,12 +280,20 @@ footer address {
         padding: 0 10px 30px;
     }
 
-    header {
-        padding: 30px 10px;
+    h1 {
+        font-size: 30px;
     }
 
-    header h1 {
-        font-size: 30px;
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    header {
+        padding: 30px 10px;
     }
 
     header h2 {
