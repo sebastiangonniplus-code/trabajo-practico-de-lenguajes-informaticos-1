@@ -33,7 +33,6 @@ body.white-mode {
     --color-coral: #E85D4A;
     --color-texto: #263653;
     --color-blanco: #0D1C42;
-    --color-coral: #B83B2D;
     --color-error: #B3261E;
     --color-exito: #187A35;
 }
@@ -297,6 +296,16 @@ footer address {
     color: var(--color-luminoso) !important;
     font-weight: bold;
     font-size: 22px;
+}
+
+/* =========================
+   FLEXBOX DEL MENÚ
+   ========================= */
+
+.navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
 /* =========================
