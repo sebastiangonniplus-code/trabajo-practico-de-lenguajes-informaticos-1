@@ -86,6 +86,28 @@ body.white-mode {
     display: block;
 }
 
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--color-luminoso);
+    font-weight: bold;
+}
+
+form button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--color-acento);
+    color: var(--color-blanco);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: var(--color-coral);
+    color: var(--color-fondo);
+}
+
 /* =========================
    CUERPO DE LA PÁGINA
    ========================= */
